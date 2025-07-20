@@ -1,7 +1,0 @@
-[build]
-  command = "npm install && npm run build"
-  publish = "dist" # For frontend build (if any)
-  functions = "netlify/functions"
-
-[functions]
-  node_bundler = "esbuild" # Required for TS support
