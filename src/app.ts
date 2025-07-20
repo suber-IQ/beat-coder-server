@@ -8,6 +8,9 @@ import config from './config';
 const app = express();
 
 
+app.get("/",(_req,res) => {
+  res.status(200).send("BeatCoder Landing Page")
+})
 
 //Middlewares
 app.use(express.json());
@@ -17,9 +20,7 @@ app.use(cors({
   credentials: true,
 }));
 
-app.get("/",(req,res) => {
-  res.status(200).send("BeatCoder Landing Page")
-})
+
 // routes
 app.use('/api/v1', routes);
 
