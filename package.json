@@ -1,10 +1,10 @@
 {
     "name": "beatcoders",
     "version": "1.0.0",
-    "main": "server.js",
+    "main": "dist/index.js",
     "scripts": {
-        "start": "node dist/server.js",
-         "dev": "cross-env NODE_ENV=development nodemon --exec ts-node src/server.ts",
+        "start": "node dist/index.js",
+         "dev": "cross-env NODE_ENV=development nodemon --exec ts-node src/index.ts",
         "build": "tsc"
     },
     "author": "@suberiq",
